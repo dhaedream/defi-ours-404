@@ -1,3 +1,11 @@
+import Navbar from "../components/navbar";
+import UnknownPage from "./404";
+
 export default function Home() {
-  return <button className="btn btn-accent btn-outline">This is Daisy</button>;
+  return (
+    <div>
+      <Navbar />
+      <UnknownPage />
+    </div>
+  );
 }
