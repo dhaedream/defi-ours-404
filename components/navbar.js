@@ -3,18 +3,22 @@ import logo from "../public/logo.png";
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
+    <nav className="navbar h-16 bg-base-100">
       <div className="navbar-start">
         <Image src={logo} alt="logo" className="" />
       </div>
-      <div className="tabs">
-        <a className="tab">About</a>
-        <a className="tab">Events</a>
-        <a className="tab">Projects</a>
-        <a className="tab">Awards</a>
-        <a className="tab">Action</a>
+      <div className="navbar-center tabs  hidden lg:flex md:flex">
+        <div>
+          <a className="tab">About</a>
+          <a className="tab">Events</a>
+          <a className="tab">Projects</a>
+          <a className="tab">Awards</a>
+          <a className="tab">Action</a>
+        </div>
       </div>
-      <button className="btn navbar-end">Button</button>
+      <div className="navbar-end">
+        <a className="btn">Connect</a>
+      </div>
     </nav>
   );
 };
