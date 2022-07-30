@@ -1,5 +1,9 @@
 const UnknownPage = () => {
-  return <div>UnknownPage</div>;
+  return (
+    <div>
+      <div></div>
+    </div>
+  );
 };
 
 export default UnknownPage;
