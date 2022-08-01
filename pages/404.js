@@ -1,23 +1,20 @@
 const UnknownPage = () => {
   return (
-    // bg-slate-50/0
-    <div className="w-screen h-screen bg-[url('../public/grid.png')] bg-center bg-cover flex flex-col">
-      {/* <div className=""> */}
-      <div id="top-left" className="">
+    <div className="w-screen h-screen bg-[url('../public/grid.png')] bg-center bg-cover grid grid-rows-2 grid-cols-4 gap-1">
+      <div id="top-left" className="col-span-1 row-span-1">
         <h1 className="">Defi Ours</h1>
       </div>
-      {/* <div style="width:100%;height:0;padding-bottom:100%;position:relative;"> */}
       <div
         id="middle"
-        className="w-96 h-96 flex justify-self-center align-self-center"
+        className="w-90 h-90 col-span-2 row-span-2 col-start-1 row-start-1"
       >
         <iframe
           src="https://giphy.com/embed/gHi4YMtu5ilxykWCXj"
-          width="150%"
-          height="150%"
+          width="90%"
+          height="90%"
           //   style="position:absolute"
           frameBorder="0"
-          className="giphy-embed"
+          className="giphy-embed absolute"
           allowFullScreen
         ></iframe>
       </div>
@@ -26,7 +23,10 @@ const UnknownPage = () => {
           via GIPHY
         </a>
       </p>
-      <div id="bottom-right" className="flex flex-col">
+      <div
+        id="bottom-right"
+        className="col-span-1 row-span-1 col-start-3 row-start-3"
+      >
         <h1 className="">Page Not Found</h1>
         <p>Click Here to Learn More About Defi Ours.</p>
         <p>Click Here to Go Home.</p>
