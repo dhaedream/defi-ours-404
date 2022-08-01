@@ -1,9 +1,10 @@
 const UnknownPage = () => {
   return (
-    <div className="w-screen h-screen bg-[url('../public/grid.png')] bg-center bg-cover grid grid-rows-2 grid-cols-4 gap-1">
-      <div id="top-left" className="col-start-1 row-start-1">
-        <h1 className="">Defi Ours</h1>
-      </div>
+    <div className="overscroll-y-none w-screen h-screen bg-[url('../public/grid.png')] bg-center bg-cover grid grid-rows-2 grid-cols-4 gap-1">
+      <div
+        id="top-left"
+        className="px-10 col-start-1 row-start-1 bg-[url('../public/de-our.png')] bg-no-repeat bg-contain"
+      ></div>
       <div
         id="middle"
         className="w-90 h-90 col-span-2 row-span-2 col-start-1 row-start-1 flex flex-col "
@@ -18,18 +19,22 @@ const UnknownPage = () => {
           allowFullScreen
         ></iframe>
       </div>
-      <p className="col-start-3 row-start-3">
+      <p className="col-start-3 row-start-2">
         <a href="https://giphy.com/stickers/TRANS-EU-world-digital-lodz-gHi4YMtu5ilxykWCXj">
           via GIPHY
         </a>
       </p>
       <div
         id="bottom-right"
-        className="col-span-1 row-span-1 col-start-4 row-start-3"
+        className="row-start-2 col-start-3 col-end-5 flex flex-col justify-end mb-40"
       >
-        <h1 className="">Page Not Found</h1>
-        <p>Click Here to Learn More About Defi Ours.</p>
-        <p>Click Here to Go Home.</p>
+        <div>
+          <div className="float-right h-20 w-60 bg-[url('../public/404-text.png')] bg-no-repeat bg-contain bg-right-bottom"></div>
+        </div>
+        <p className="text-right pr-10 col-start-3 col-span-2">
+          Click Here to Learn More About Defi Ours.
+        </p>
+        <p className="text-right pr-10 col-start-3">Click Here to Go Home.</p>
       </div>
     </div>
   );
