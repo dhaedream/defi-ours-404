@@ -1,9 +1,9 @@
 const UnknownPage = () => {
   return (
-    <div className="overscroll-y-none w-screen h-screen bg-[url('../public/grid.png')] bg-center bg-cover grid grid-rows-2 grid-cols-4 gap-1">
+    <div className="overscroll-y-none w-screen h-screen bg-[url('../public/grid.png')] bg-center bg-cover grid grid-rows-2 grid-cols-4 gap-1 md:gap-0 sm:grid-rows-3 grid-col-5">
       <div
         id="top-left"
-        className="px-10 col-start-1 row-start-1 bg-[url('../public/de-our.png')] bg-no-repeat bg-contain"
+        className="px-10 col-start-1 row-start-1 bg-[url('../public/de-our.png')] bg-no-repeat bg-contain md:pt-20"
       ></div>
       <div
         id="middle"
