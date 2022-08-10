@@ -3,10 +3,10 @@ import globe from "../public/globe.gif";
 
 const UnknownPage = () => {
   return (
-    <div className="overscroll-y-none w-screen h-screen bg-[url('../public/grid.png')] bg-center bg-cover grid grid-rows-2 grid-cols-4 gap-1 sm:grid-rows-5 grid-col-3 bg-[url('../public/grid-sm.png')]">
+    <div className="overscroll-y-none w-screen h-screen sm:grid-rows-5 grid-col-3 bg-[url('../public/grid-sm.png')] md:bg-[url('../public/grid.png')] bg-center bg-cover grid grid-rows-2 grid-cols-4 gap-1 ">
       <div
         id="top-left"
-        className="px-10 col-start-1 row-start-1 bg-[url('../public/de-our.png')] bg-no-repeat bg-contain md:pt-20 row-start-2 col-start-2"
+        className="px-10 bg-[url('../public/de-our.png')] bg-no-repeat bg-contain "
       ></div>
       <div
         id="middle"
@@ -29,7 +29,7 @@ const UnknownPage = () => {
       </p>
       <div
         id="bottom-right"
-        className="row-start-3 col-start-3 col-end-5 flex flex-col justify-end mb-40"
+        className="row-end-6 col-start-3 col-end-5 flex flex-col justify-end mb-40 "
       >
         <div>
           <div className="float-right h-20 w-60 bg-[url('../public/404-text.png')] bg-no-repeat bg-contain bg-right-bottom"></div>
