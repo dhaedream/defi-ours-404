@@ -1,23 +1,26 @@
+import Image from "next/image";
+import globe from "../public/globe.gif";
+
 const UnknownPage = () => {
   return (
-    <div className="overscroll-y-none w-screen h-screen bg-[url('../public/grid.png')] bg-center bg-cover grid grid-rows-2 grid-cols-4 gap-1 md:gap-0 sm:grid-rows-3 grid-col-5">
+    <div className="overscroll-y-none w-screen h-screen bg-[url('../public/grid.png')] bg-center bg-cover grid grid-rows-2 grid-cols-4 gap-1 sm:grid-rows-5 grid-col-3 bg-[url('../public/grid-sm.png')]">
       <div
         id="top-left"
-        className="px-10 col-start-1 row-start-1 bg-[url('../public/de-our.png')] bg-no-repeat bg-contain md:pt-20"
+        className="px-10 col-start-1 row-start-1 bg-[url('../public/de-our.png')] bg-no-repeat bg-contain md:pt-20 row-start-2 col-start-2"
       ></div>
       <div
         id="middle"
-        className="w-90 h-90 col-span-2 row-span-2 col-start-1 row-start-1 flex flex-col "
+        className="w-90 h-90 col-span-2 row-span-3 col-start-2 row-start-1 flex flex-col md:row-start-2"
       >
-        <iframe
-          src="https://giphy.com/embed/gHi4YMtu5ilxykWCXj"
-          width="90%"
-          height="90%"
-          //   style="position:absolute"
-          frameBorder="0"
-          className="giphy-embed absolute"
-          allowFullScreen
-        ></iframe>
+        <Image
+          src={globe}
+          layout="fill"
+          objectFit="contain"
+          //   width={600}
+          //   height={600}
+          className="giphy-embed "
+          alt=""
+        />
       </div>
       <p className="col-start-3 row-start-2">
         <a href="https://giphy.com/stickers/TRANS-EU-world-digital-lodz-gHi4YMtu5ilxykWCXj">
@@ -26,7 +29,7 @@ const UnknownPage = () => {
       </p>
       <div
         id="bottom-right"
-        className="row-start-2 col-start-3 col-end-5 flex flex-col justify-end mb-40"
+        className="row-start-3 col-start-3 col-end-5 flex flex-col justify-end mb-40"
       >
         <div>
           <div className="float-right h-20 w-60 bg-[url('../public/404-text.png')] bg-no-repeat bg-contain bg-right-bottom"></div>
